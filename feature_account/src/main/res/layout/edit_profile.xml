@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0b1b32">
+    <ImageView
+        android:id="@+id/imgBackSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/imgBackSetting"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBackSetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNameFull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,Tai Chau"
+        app:layout_constraintTop_toBottomOf="@id/imgBackSetting"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/imgBackSetting"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvEmailE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/imgBackSetting"
+        app:layout_constraintTop_toBottomOf="@id/tvNameFull" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_status"
+        android:padding="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="taichau@gmail.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvEmailE"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailE" />
+    <TextView
+        android:id="@+id/tvAddressE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Address"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/imgBackSetting"
+        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+    <EditText
+        android:id="@+id/etAddressE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_status"
+        android:padding="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="Quan Hoan Kiem, Ha Noi, Vietnam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvAddressE"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddressE" />
+
+    <TextView
+        android:id="@+id/tvPhoneE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Phone Number"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/imgBackSetting"
+        app:layout_constraintTop_toBottomOf="@id/etAddressE" />
+
+    <EditText
+        android:id="@+id/etPhoneE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_status"
+        android:padding="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="034657829"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvPhoneE"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneE" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customer_button"
+        android:padding="10dp"
+        android:text="Update Profile"
+        android:textColor="#0b1b32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etPhoneE"
+        app:layout_constraintStart_toStartOf="@+id/etPhoneE"
+        app:layout_constraintTop_toBottomOf="@id/etPhoneE" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
